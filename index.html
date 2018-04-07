@@ -195,16 +195,15 @@
   };
 
   var getWizardHeight = function() {
-  	var wizardHeight = HEIGHT_PROPORTION * wizardWidth;
-    return wizardHeight;
+    return HEIGHT_PROPORTION * wizardWidth;
   };
 
   function getWizardX(width) {
-    return width * 0.5 - wizardWidth * 0.5;
+    return (width - wizardWidth) / 2;
   };
 
   function getWizardY(height) {
-    return height / 3 - getWizardHeight() * 0.5;
+    return (2 * height - 3 * getWizardHeight()) / 6;
   };
 
 </script>
